@@ -23,7 +23,7 @@ Initially developed as a **web-based model**, it is later planned to be integrat
 ---
 
 ## ⚙️ **Key Features**
-
+```
 ✅ **AI-Powered Breed Detection** – Uses CNN / MobileNet / EfficientNet models for image-based prediction.
 ✅ **Web Application Interface** – Upload an image and get instant breed name + confidence score.
 ✅ **Indian Breed Dataset Focus** – Optimized for breeds like **Gir, Sahiwal, Murrah, Tharparkar**, etc.
@@ -32,6 +32,7 @@ Initially developed as a **web-based model**, it is later planned to be integrat
 ✅ **User-Friendly UI** – Simple, intuitive, and accessible even in low-connectivity rural areas.
 
 ---
+```
 
 ## 🧩 **System Architecture**
 
