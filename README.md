@@ -90,7 +90,7 @@ dataset/
 ```
 
 - Use consistent and clear labeling to avoid confusion.
-- Ensure each class has **at least 100–200 images** for good accuracy (more is better).
+- Ensure each class has **at least 1000–2000 images** for good accuracy (more is better).
 
 ---
 
