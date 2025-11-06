@@ -1,201 +1,149 @@
-# 🐮 PashuDrishti – AI-Based Cattle & Buffalo Breed Recognition
+# 🐄 Cow and Buffalo Breed Classification using Deep Learning
 
-### Problem ID: 25004 – *Image-Based Breed Recognition for Cattle and Buffaloes (Beginner to Intermediate)*
+## 📘 Overview
 
----
-
-## 🧠 **Overview**
-
-**PashuDrishti** is an AI-powered web application designed to recognize the breed of cattle and buffaloes from images.
-By leveraging **deep learning** and **computer vision**, it helps farmers, veterinarians, and field workers identify animal breeds instantly, improving livestock management and record accuracy.
-
-The system analyzes visual traits such as **coat color**, **horn shape**, **body structure**, and **facial features** to determine the breed and confidence score.
-Initially developed as a **web-based model**, it is later planned to be integrated into **mobile or offline** systems for real-time field use.
+This project aims to build a **Deep Learning-based model** that classifies **Indian cow and buffalo breeds** from images.  
+India has rich livestock diversity with numerous indigenous breeds, but identifying them manually can be challenging — especially for farmers, researchers, and veterinarians.  
+This project provides an AI-driven approach for **automated breed identification** using **image classification techniques (CNN, Transfer Learning, or Vision Transformers)**.
 
 ---
 
-## 🎯 **Objectives**
+## 🎯 Objectives
 
-* To develop an accurate image classification model for identifying cattle and buffalo breeds.
-* To support farmers and livestock authorities with quick, automated breed recognition.
-* To build a scalable AI system that can later work offline via **TensorFlow Lite** or integrate with government platforms like **Bharat Pashudhan App (BPA)**.
+- Build a model to classify **10 cow breeds** and **10 buffalo breeds** found in India.
+- Collect and preprocess high-quality image datasets.
+- Use **Transfer Learning (ResNet, EfficientNet, or MobileNet)** for better performance on smaller datasets.
+- Evaluate model accuracy and deploy as a web or mobile app for real-world use.
 
 ---
 
-## ⚙️ **Key Features**
+## 🐮 Example Breeds
+
+### Cow Breeds:
+1. Gir  
+2. Sahiwal  
+3. Red Sindhi  
+4. Tharparkar  
+5. Rathi  
+6. Ongole  
+7. Kankrej  
+8. Hariana  
+9. Deoni  
+10. Vechur  
+
+### Buffalo Breeds:
+1. Murrah  
+2. Jaffarabadi  
+3. Mehsana  
+4. Nili-Ravi  
+5. Surti  
+6. Banni  
+7. Pandharpuri  
+8. Nagpuri  
+9. Toda  
+10. Marathwadi  
+
+---
+
+## 🧠 Model Design
+
+| Step | Description |
+|------|--------------|
+| 1️⃣ | **Data Collection** – Gather images from open datasets, government portals, and field data. |
+| 2️⃣ | **Data Labeling** – Each image labeled by breed name (e.g., `Gir`, `Murrah`). Use tools like **LabelImg** or **CVAT**. |
+| 3️⃣ | **Preprocessing** – Resize, normalize, augment (flip, rotate, zoom) for robustness. |
+| 4️⃣ | **Model Selection** – Use CNNs or transfer learning models like **ResNet50**, **VGG16**, or **EfficientNet**. |
+| 5️⃣ | **Training & Validation** – Split dataset (e.g., 80% train / 20% test). Use early stopping and dropout for regularization. |
+| 6️⃣ | **Evaluation** – Accuracy, Precision, Recall, F1-score, Confusion Matrix. |
+| 7️⃣ | **Deployment** – Flask/Streamlit web app or Android mobile app with live camera prediction. |
+
+---
+
+## 📦 Dataset Sources
+
+You can gather data from:
+- [ICAR-NBAGR (National Bureau of Animal Genetic Resources)](https://nbagr.icar.gov.in/)
+- [Kaggle Datasets](https://www.kaggle.com)
+- [Google Open Images Dataset](https://storage.googleapis.com/openimages/web/index.html)
+- [Roboflow Universe](https://universe.roboflow.com/)
+- [Government Open Data Portal – India](https://data.gov.in/)
+- Field-collected data or local farms (with permission)
+
+---
+
+## 🏷️ Labeling Guidelines
+
+- Each image should be labeled with its **breed name**.
+- Maintain a folder structure like this:
 ```
-✅ **AI-Powered Breed Detection** – Uses CNN / MobileNet / EfficientNet models for image-based prediction.
-✅ **Web Application Interface** – Upload an image and get instant breed name + confidence score.
-✅ **Indian Breed Dataset Focus** – Optimized for breeds like **Gir, Sahiwal, Murrah, Tharparkar**, etc.
-✅ **Optional Cloud Integration** – Can connect with the **BPA API** for automated record updates.
-✅ **Future-Ready Design** – Supports conversion to TensorFlow Lite for **mobile or offline** inference.
-✅ **User-Friendly UI** – Simple, intuitive, and accessible even in low-connectivity rural areas.
-
----
-```
-
-## 🧩 **System Architecture**
-
-```
-[User Uploads Image]
-        ↓
-[Web Interface (React/HTML)]
-        ↓
-[Backend API – Flask / FastAPI / Node.js]
-        ↓
-[AI Model – CNN / MobileNet / EfficientNet]
-        ↓
-[Predicted Breed + Confidence Score]
-        ↓
-[Display on Web Dashboard / Optional Sync with BPA]
-```
-
----
-
-## 🧠 **Model Workflow**
-
-1. **Dataset Collection** – Images of Indian cattle and buffalo breeds.
-2. **Preprocessing** – Image resizing, normalization, and augmentation.
-3. **Model Training** – CNN or MobileNet-based classifier trained on labeled data.
-4. **Evaluation** – Accuracy, confusion matrix, and F1-score metrics.
-5. **Deployment** – Model integrated into a Flask/React web app.
-6. **User Interaction** – Upload → Predict → Get Results instantly.
-
----
-
-## ⚙️ **Software Requirements**
-
-### 🖥️ Frontend
-
-* HTML5, CSS3, JavaScript / React.js
-* Axios / Fetch API for backend communication
-* TailwindCSS / Bootstrap for quick UI design
-
-### 🔧 Backend
-
-* Python 3.10+
-* Flask / FastAPI (for REST API)
-* TensorFlow / Keras (for CNN model)
-* OpenCV, Pillow, NumPy (for preprocessing)
-* joblib / pickle (for saving model weights)
-
-### 🧠 AI/ML Libraries
-
-* TensorFlow (≥2.10)
-* Keras
-* scikit-learn
-* matplotlib / seaborn
-
-### 🗄️ Database (Optional)
-
-* SQLite (local) / MongoDB / Firebase (cloud)
-
-### 🌐 Deployment Tools
-
-* Render, Hugging Face Spaces, or Streamlit Cloud
-* TensorFlow Lite (future mobile version)
-
----
-
-## 💾 **Dataset Requirements**
-
-| Requirement       | Description                                            |
-| ----------------- | ------------------------------------------------------ |
-| **Image Dataset** | High-quality images of Indian cattle & buffalo breeds  |
-| **Breed Labels**  | Gir, Sahiwal, Murrah, Tharparkar, Red Sindhi, etc.     |
-| **Sources**       | Public datasets (Kaggle, NDDB, ICAR) or custom dataset |
-| **Image Format**  | JPG / PNG, ideally 224x224 or 256x256 resolution       |
-| **Augmentation**  | Rotation, flip, brightness, contrast adjustments       |
-
----
-
-## 🔋 **Hardware Requirements**
-
-| Component                       | Requirement                             |
-| ------------------------------- | --------------------------------------- |
-| **Development Machine**         | Laptop/PC with ≥8 GB RAM, 4-core CPU    |
-| **GPU (Optional)**              | NVIDIA GPU for faster training          |
-| **Mobile/Camera Device**        | To test real-world image capture        |
-| **(Optional)** IoT Camera Setup | For future automated livestock scanning |
-
----
-
-## 🧩 **Suggested File Structure**
-
-```
-PashuDrishti/
-│
-├── backend/
-│   ├── app.py
-│   ├── model/
-│   │   ├── breed_model.h5
-│   │   ├── labels.json
-│   └── utils/
-│       ├── preprocess.py
-│
-├── frontend/
-│   ├── index.html
-│   ├── styles.css
-│   ├── script.js
-│
-├── dataset/
-│   ├── train/
-│   ├── test/
-│
-├── requirements.txt
-├── README.md
-└── LICENSE
+dataset/
+├── cow/
+│ ├── Gir/
+│ ├── Sahiwal/
+│ ├── Red_Sindhi/
+│ └── ...
+├── buffalo/
+│ ├── Murrah/
+│ ├── Mehsana/
+│ ├── Banni/
+│ └── ...
 ```
 
----
-
-## 📦 **Example requirements.txt**
-
-```
-Flask==3.0.2
-tensorflow==2.16.1
-keras==3.1.1
-numpy==1.26.4
-pillow==10.2.0
-opencv-python==4.9.0.80
-scikit-learn==1.5.2
-matplotlib==3.9.2
-seaborn==0.13.2
-gunicorn==21.2.0
-```
+- Use consistent and clear labeling to avoid confusion.
+- Ensure each class has **at least 100–200 images** for good accuracy (more is better).
 
 ---
 
-## 📈 **Future Enhancements**
+## 🧩 Tools & Libraries
 
-* 📱 TensorFlow Lite integration for offline mobile prediction
-* ☁️ API integration with **Bharat Pashudhan App (BPA)**
-* 🛰️ GPS tagging and QR-based livestock tracking
-* 📊 Analytics dashboard for breed insights
-* 🔊 Voice-based feedback in local languages
-
----
-
-## 💡 **Example Prediction**
-
-| Image Input             | Predicted Breed | Confidence |
-| ----------------------- | --------------- | ---------- |
-| 🐄 Gir cow image        | Gir             | 96%        |
-| 🐃 Murrah buffalo image | Murrah          | 94%        |
-| 🐄 Sahiwal cow image    | Sahiwal         | 92%        |
+- **Python 3.x**
+- **TensorFlow / Keras**
+- **OpenCV**
+- **NumPy, Pandas, Matplotlib**
+- **LabelImg / CVAT**
+- **Flask / Streamlit** (for deployment)
 
 ---
 
-## 👨‍💻 **Developed By**
+## 📊 Performance Metrics
 
-**Mayank Kumar**
-*(Independent Developer – AI, ML, and Web Enthusiast)*
-
-📧 **Email:** [02mayankk@gmail.com](mailto:02mayankk@gmail.com)
-🌐 **GitHub:** [github.com/02mayankk](https://github.com/02mayankk)
+- Accuracy (Top-1 and Top-3)
+- Confusion Matrix
+- Precision, Recall, and F1-score per class
+- Model size and inference time
 
 ---
 
-## 🐮 **Tagline**
+## 🚀 Future Scope
 
-> *“Smart Vision for Smarter Livestock – Empowering Farmers with AI.”*
+- Add support for **real-time detection** using mobile cameras.
+- Expand dataset with more Indian breeds.
+- Integrate with **farm management systems** for breed record-keeping.
+- Use **Vision Transformers (ViT)** for higher accuracy.
+
+---
+
+👨‍💻 Developed By
+
+Mayank Kumar
+(Independent Developer – AI, ML, and Web Enthusiast)
+
+📧 Email: 02mayankk@gmail.com
+
+🌐 GitHub: github.com/02mayankk
+
+🐮 Tagline
+
+“Smart Vision for Smarter Livestock – Empowering Farmers with AI.”
+---
+
+## 📅 Project Stage
+
+**Status:** Data Collection & Model Planning Phase  
+**Next Step:** Build dataset → Train baseline CNN → Evaluate → Deploy on web
+
+---
+
+## 🧾 License
+
+This project is open-source under the **MIT License** — free to use and modify for research and educational purposes.
