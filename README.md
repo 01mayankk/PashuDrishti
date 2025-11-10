@@ -45,23 +45,32 @@ This project provides an AI-driven approach for **automated breed identification
 
 ---
 
-📚 Previous Works / Literature Review
+##📚 Previous Works / Literature Review
 
 Below are some existing research works and studies related to AI-based cattle and buffalo breed identification using deep learning and computer vision techniques. These serve as references and motivation for PashuDrishti (SIH 2025 – Problem ID 25004).
 
 #	Research Title	Year	Source / Link
 1	Identification of Buffalo Breeds Using Self-Activated-Based Improved Convolutional Neural Networks	2022	🔗 MDPI – Agriculture Journal
-2	Computer Vision-Based Approach for Automatic Detection of Dairy Cow Breed	2022	🔗 MDPI – Electronics Journal
-3	A Systematic Review of Machine Learning Techniques for Cattle Identification: Datasets, Methods and Future Directions	2022	🔗 arXiv Preprint
-4	Cattle Identification Based on Multiple Feature Decision Layer Fusion	2024	🔗 Nature – Scientific Reports
-5	Deep-Learning-Based Buffalo Identification through Muzzle Pattern Images	2025	🔗 AAB Journal (Copernicus)
-6	Ensemble Learning Algorithm for Cattle Breed Identification Using Computer Vision Techniques	2023	🔗 EAI Conference Proceedings
 
-🧩 Key Observations
+2	Computer Vision-Based Approach for Automatic Detection of Dairy Cow Breed	2022	🔗 MDPI – Electronics Journal
+
+3	A Systematic Review of Machine Learning Techniques for Cattle Identification: Datasets, Methods and Future Directions	2022	🔗 arXiv Preprint
+
+4	Cattle Identification Based on Multiple Feature Decision Layer Fusion	2024	🔗 Nature – Scientific Reports
+
+5	Deep-Learning-Based Buffalo Identification through Muzzle Pattern Images	2025	🔗 AAB Journal (Copernicus)
+
+6	Ensemble Learning Algorithm for Cattle Breed Identification Using Computer Vision Techniques	2023	🔗 EAI Conference Proceedings
+#🧩 Key Observations
+
 Most studies focus on muzzle print or facial pattern recognition for cattle identification.
+
 CNNs, MobileNet, and ResNet architectures are commonly used for feature extraction.
+
 There is limited availability of Indian cattle/buffalo datasets, which presents an opportunity for PashuDrishti to fill the gap.
+
 Recent works (2024–2025) are shifting towards multi-feature fusion and ensemble learning to improve accuracy.
+
 Some systems are extending toward real-time or mobile-based deployment, which aligns with the future goal of this project.
 
 ## 🧠 Model Design
