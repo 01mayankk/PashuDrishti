@@ -45,7 +45,7 @@ This project provides an AI-driven approach for **automated breed identification
 
 ---
 
-##📚 Previous Works / Literature Review
+## 📚 Previous Works / Literature Review
 
 Below are some existing research works and studies related to AI-based cattle and buffalo breed identification using deep learning and computer vision techniques. These serve as references and motivation for PashuDrishti (SIH 2025 – Problem ID 25004).
 
@@ -61,7 +61,8 @@ Below are some existing research works and studies related to AI-based cattle an
 5	Deep-Learning-Based Buffalo Identification through Muzzle Pattern Images	2025	🔗 AAB Journal (Copernicus)
 
 6	Ensemble Learning Algorithm for Cattle Breed Identification Using Computer Vision Techniques	2023	🔗 EAI Conference Proceedings
-#🧩 Key Observations
+
+# 🧩 Key Observations
 
 Most studies focus on muzzle print or facial pattern recognition for cattle identification.
 
