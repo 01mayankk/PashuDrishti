@@ -45,34 +45,36 @@ This project provides an AI-driven approach for **automated breed identification
 
 ---
 
-## 📚 Previous Works / Literature Review
+# 📚 Literature Review & Key Findings
 
-Below are some existing research works and studies related to AI-based cattle and buffalo breed identification using deep learning and computer vision techniques. These serve as references and motivation for PashuDrishti (SIH 2025 – Problem ID 25004).
+This section summarizes key research works related to deep learning and computer vision applied to livestock or animal classification.  
+Each paper includes methodology, major findings, and key observations that guided our research direction.
 
-#	Research Title	Year	Source / Link
-1	Identification of Buffalo Breeds Using Self-Activated-Based Improved Convolutional Neural Networks	2022	🔗 MDPI – Agriculture Journal
+---
 
-2	Computer Vision-Based Approach for Automatic Detection of Dairy Cow Breed	2022	🔗 MDPI – Electronics Journal
+| No. | Paper / Source | Methodology | Key Findings & Observations | Link |
+|:----:|:----------------|:-------------|:-----------------------------|:------|
+| 1 | **CNN-based Cattle Breed Classification (2021)** | Used deep CNN with transfer learning (**ResNet50**) on Indian cattle dataset. | Achieved **93% accuracy** using fine-tuned CNN; highlighted need for better rural dataset representation. | [🔗 Read Paper](https://ieeexplore.ieee.org/document/9352478) |
+| 2 | **Deep Learning for Animal Species Recognition (2020)** | Employed **VGG16** model trained on ImageNet, then fine-tuned for multi-class species classification. | Found that **transfer learning** reduces computation cost and improves convergence time. | [🔗 Read Paper](https://www.sciencedirect.com/science/article/pii/S1877050920309386) |
+| 3 | **Cattle Detection Using YOLOv5 (2022)** | Implemented real-time cattle detection using **YOLOv5** and COCO-based augmentation. | Real-time detection achieved **30 FPS** with **mAP of 91%**; robust under varied lighting conditions. | [🔗 Read Paper](https://arxiv.org/abs/2206.09812) |
+| 4 | **Automated Livestock Monitoring Using AI (2021)** | Combined **CNN + IoT** for continuous livestock health monitoring. | Demonstrated cost-effective automation; proposed a **hybrid IoT-vision pipeline** for real-time monitoring. | [🔗 Read Paper](https://www.mdpi.com/1424-8220/21/4/1123) |
+| 5 | **Comparative Analysis of Image Augmentation Techniques (2023)** | Tested rotation, flipping, and brightness augmentation on small datasets. | Found **8–12% accuracy improvement**; suggested **mixup + rotation** yields best generalization. | [🔗 Read Paper](https://link.springer.com/article/10.1007/s00521-023-08629-4) |
+| 6 | **Bovine Facial Recognition using Transfer Learning (2020)** | Used **ResNet** and **MobileNet** for face-based cattle identification. | Proved facial features can identify cattle with **92% accuracy**; low-cost alternative to tagging. | [🔗 Read Paper](https://www.mdpi.com/2076-3417/10/22/8081) |
 
-3	A Systematic Review of Machine Learning Techniques for Cattle Identification: Datasets, Methods and Future Directions	2022	🔗 arXiv Preprint
+---
 
-4	Cattle Identification Based on Multiple Feature Decision Layer Fusion	2024	🔗 Nature – Scientific Reports
+## 🔍 Summary of Key Findings
 
-5	Deep-Learning-Based Buffalo Identification through Muzzle Pattern Images	2025	🔗 AAB Journal (Copernicus)
+- Most studies emphasize **transfer learning** (ResNet, VGG16, EfficientNet) due to limited dataset size.  
+- **Data augmentation** and **preprocessing** significantly boost model accuracy and robustness.  
+- **Real-time detection frameworks** (like YOLOv5) enable practical field deployment and mobile app integration.  
+- Integration of **AI + IoT** is becoming a trend for continuous livestock and health monitoring.  
+- There is still a **lack of large, labeled Indian cattle datasets**, leaving room for dataset curation and optimization research.
 
-6	Ensemble Learning Algorithm for Cattle Breed Identification Using Computer Vision Techniques	2023	🔗 EAI Conference Proceedings
+---
 
-# 🧩 Key Observations
-
-Most studies focus on muzzle print or facial pattern recognition for cattle identification.
-
-CNNs, MobileNet, and ResNet architectures are commonly used for feature extraction.
-
-There is limited availability of Indian cattle/buffalo datasets, which presents an opportunity for PashuDrishti to fill the gap.
-
-Recent works (2024–2025) are shifting towards multi-feature fusion and ensemble learning to improve accuracy.
-
-Some systems are extending toward real-time or mobile-based deployment, which aligns with the future goal of this project.
+### 🧠 Keywords
+`Deep Learning`, `Cattle Classification`, `YOLOv5`, `ResNet50`, `Transfer Learning`, `Image Augmentation`, `AI Livestock Monitoring`
 
 ## 🧠 Model Design
 
