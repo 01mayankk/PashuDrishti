@@ -1,0 +1,36 @@
+# PashuDrishti Configuration File
+
+data:
+  source_dir: "dataset/archive/Indian_bovine_breeds/Indian_bovine_breeds"
+  raw_dir: "data/raw"
+  interim_dir: "data/interim"
+  processed_dir: "data/processed"
+  train_ratio: 0.7
+  val_ratio: 0.15
+  test_ratio: 0.15
+
+model:
+  name: "cnn_classifier"
+  input_size: [224, 224]  # [width, height]
+  num_classes: null  # Will be determined from dataset
+
+training:
+  batch_size: 32
+  epochs: 50
+  learning_rate: 0.001
+  early_stopping_patience: 10
+  validation_split: 0.15
+
+augmentation:
+  rotation_range: 20
+  width_shift_range: 0.1
+  height_shift_range: 0.1
+  horizontal_flip: true
+  zoom_range: 0.1
+  brightness_range: [0.9, 1.1]
+
+api:
+  host: "0.0.0.0"
+  port: 8000
+  model_path: "models/best_cnn.h5"
+
