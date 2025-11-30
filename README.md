@@ -1,5 +1,9 @@
 # 🐄 Cow and Buffalo Breed Classification using Deep Learning
 
+## DataSet
+https://www.kaggle.com/datasets/lukex9442/indian-bovine-breeds?utm_source=chatgpt.com%0A
+
+
 ## 📘 Overview
 
 This project aims to build a **Deep Learning-based model** that classifies **Indian cow and buffalo breeds** from images.  
