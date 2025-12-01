@@ -8,7 +8,7 @@ https://www.kaggle.com/datasets/lukex9442/indian-bovine-breeds?utm_source=chatgp
 
 This project aims to build a **Deep Learning-based model** that classifies **Indian cow and buffalo breeds** from images.  
 India has rich livestock diversity with numerous indigenous breeds, but identifying them manually can be challenging — especially for farmers, researchers, and veterinarians.  
-This project provides an AI-driven approach for **automated breed identification** using **image classification techniques (CNN, Transfer Learning, or Vision Transformers)**.
+This project provides an AI-driven approach for 
 
 ---
 
