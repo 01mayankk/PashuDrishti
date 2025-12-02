@@ -14,7 +14,7 @@ This project provides an AI-driven approach for
 
 ## 🎯 Objectives
 
-- Build a model to classify **10 cow breeds** and **10 buffalo breeds** found in India.
+- Build a model to classify **08 cow breeds** and **07 buffalo breeds** found in India.
 - Collect and preprocess high-quality image datasets.
 - Use **Transfer Learning (ResNet, EfficientNet, or MobileNet)** for better performance on smaller datasets.
 - Evaluate model accuracy and deploy as a web or mobile app for real-world use.
@@ -24,28 +24,23 @@ This project provides an AI-driven approach for
 ## 🐮 Example Breeds
 
 ### Cow Breeds:
-1. Gir  
-2. Sahiwal  
-3. Red Sindhi  
-4. Tharparkar  
-5. Rathi  
-6. Ongole  
-7. Kankrej  
-8. Hariana  
-9. Deoni  
-10. Vechur  
+- Alambadi  
+- Amritmahal  
+- Banni  
+- Bargur  
+- Deoni  
+- Kasargod  
+- Kangayam  
+- Nagori 
 
 ### Buffalo Breeds:
-1. Murrah  
-2. Jaffarabadi  
-3. Mehsana  
-4. Nili-Ravi  
-5. Surti  
-6. Banni  
-7. Pandharpuri  
-8. Nagpuri  
-9. Toda  
-10. Marathwadi  
+- Bhadawari  
+- Jaffrabadi  
+- Mehsana  
+- Murrah  
+- Nagpuri  
+- Nili Ravi  
+- Surti
 
 ---
 
