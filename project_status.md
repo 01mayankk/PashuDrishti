@@ -1,7 +1,7 @@
 📊 Project Progress (Step-Wise)
 
 ✔️ Step 1: Dataset Collection
-Downloaded Indian bovine breeds dataset from Kaggle
+Downloaded Indian bovine breeds dataset from Kaggle.(https://www.kaggle.com/datasets/lukex9442/indian-bovine-breeds?utm_source=chatgpt.com)
 Stored permanently in Google Drive
 
 ✔️ Step 2: Breed Selection
@@ -15,7 +15,9 @@ Removed small images.
 Remove Blurry Images.
 Identified duplicates images.
 
-✔️ Step 4: Resize Images
+✔️ Step 4:Successfully converted data to metadata for better accuracy and efficiency.
+
+✔️ Step 5: Resize Images
 All images resized to 224×224
 Saved in final_dataset/
 
